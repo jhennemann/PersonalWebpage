@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+
+
+navbar{
+  top: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: gray;
+  font-size: 30px;
+  font-weight: bold;
+  height: 10vh;
+}
+
+navbar button{
+  border: none;
+  color: purple;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 5px 20px;
+  border: 5px solid rgb(44, 43, 43);
+  right: 0%;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+ a{
+  text-decoration: none;
+}
+
+navbar a{
+  color: blueviolet;
+}
+
+navbar p{
+  padding-left: 5%;
+  padding-right: 30%;
+  color: white;
+}
+
+ navbar #navdiv{
+  float: right;
+}
+navbar li{
+  list-style-type: none;
+  display: inline;
+}
+
+main{
+  margin-top: 13vh;
+  display: grid;
+  grid-template-columns: 10px 1fr 1fr 1px;
+  grid-template-rows: 250px 400px 300px 300px;
+  gap: 25px;
+}
+
+.word{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+  font-size: 50px;
+  border-radius: 50px;
+}
+
+#socials-word{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#socials-description{
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+
+#icons{
+  top: 0;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#soc-info{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+img{
+  height: 100px;
+  width: 100px;
+}
+
+#edu-word{
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#edu-description{
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#edu-description h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+#hs h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+#edu-description h2{
+  margin-bottom: 15px;
+}
+
+#line{
+  border-bottom: white dashed 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#project-word{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#project-description{
+  grid-column: 3;
+  grid-row: 3;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.p-link{
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.moveLink:hover{
+  transform: translateY(-2px);
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
